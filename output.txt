@@ -1,0 +1,60 @@
+Passenger 1 left train at station Back of the Hill
+Passenger 2 left train at station Riverway
+Passenger 22 left train at station Riverway
+Passenger 3 left train at station Mission Park
+Passenger 23 left train at station Mission Park
+Passenger 4 left train at station Fenwood Rd
+Passenger 24 left train at station Fenwood Rd
+Passenger 5 left train at station Brigham Circle
+Passenger 25 left train at station Brigham Circle
+Passenger 6 left train at station Longwood Medical
+Passenger 26 left train at station Longwood Medical
+Passenger 7 left train at station Museum of Fine Arts
+Passenger 27 left train at station Museum of Fine Arts
+Passenger 8 left train at station Northeastern
+Passenger 9 left train at station Symphony
+Passenger 10 left train at station Prudential
+Passenger 11 left train at station Copley
+Passenger 12 left train at station Arlington
+Passenger 13 left train at station Boylston
+Passenger 14 left train at station Park St
+Passenger 15 left train at station Government Center
+Passenger 16 left train at station Haymarket
+Passenger 17 left train at station North Station
+Passenger 18 left train at station Science Park
+Passenger 19 left train at station Lechmere
+Passenger 20 left train at station Union Square
+Passenger 21 left train at station East Somerville
+Passenger 42 left train at station Mission Park
+Passenger 43 left train at station Fenwood Rd
+Passenger 44 left train at station Brigham Circle
+Passenger 45 left train at station Longwood Medical
+Passenger 46 left train at station Museum of Fine Arts
+Passenger 28 left train at station Northeastern
+Passenger 47 left train at station Northeastern
+Passenger 29 left train at station Symphony
+Passenger 48 left train at station Symphony
+Passenger 30 left train at station Prudential
+Passenger 49 left train at station Prudential
+Passenger 31 left train at station Copley
+Passenger 50 left train at station Copley
+Passenger 32 left train at station Arlington
+Passenger 51 left train at station Arlington
+Passenger 33 left train at station Boylston
+Passenger 52 left train at station Boylston
+Passenger 34 left train at station Park St
+Passenger 53 left train at station Park St
+Passenger 35 left train at station Government Center
+Passenger 54 left train at station Government Center
+Passenger 36 left train at station Haymarket
+Passenger 37 left train at station North Station
+Passenger 38 left train at station Science Park
+Passenger 39 left train at station Lechmere
+Passenger 40 left train at station Union Square
+Passenger 41 left train at station East Somerville
+Passenger 55 left train at station Haymarket
+Passenger 56 left train at station North Station
+Passenger 57 left train at station Science Park
+Passenger 58 left train at station Lechmere
+Passenger 59 left train at station Union Square
+Passenger 60 left train at station East Somerville

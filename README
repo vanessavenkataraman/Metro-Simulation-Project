@@ -1,0 +1,153 @@
+/**********************************************************
+* HW2: Metro Simulator
+* Comp 15 Spring 2021
+* README
+* Author: Vanessa Venkataraman February 2021
+*********************************************************/
+
+Compile/run:
+     - Compile using
+            make MetroSim
+     - run executable with
+            ./MetroSim stationsFile passFile [commands]
+
+Program Purpose:
+
+This homework assignment simulates a running train to accommodate
+passengers arriving/departing a metro.  Learn how to design and
+modularize code and work with documented libraries.
+
+Acknowledgements: 
+
+I read about the Vector class and its methods on:
+https://www.cplusplus.com/reference/vector/vector/
+to learn about the data structure.
+
+I read about input/output with files on:
+https://www.cplusplus.com/doc/tutorial/files/
+to refresh my memory on filestreams.
+
+I read about stringstreams on:
+https://www.cplusplus.com/reference/sstream/stringstream/stringstream/
+to refresh my memory on stringstreams.
+
+I received help from multiple different TAs at office hours to understand
+and discuss output with files and using diff.
+
+Files: 
+
+main.cpp:
+     reads in files, creates a MetroSim, runs functions (specified by commands)
+     that manipulate the MetroSim, and outputs to a file.
+
+MetroSim.cpp:
+     Implementation of MetroSim class which includes key functions regarding
+     station vectors and train vectors, such as the constructor, print 
+     functions, and other functions. Main functionality of running the Metro
+     Simulation, should be able to move trains and deal with passengers going
+     on/off the train.
+
+MetroSim.h:
+     Interface of MetroSim class, which includes key information regarding the
+     MetroSim class.
+
+stations.txt:
+     an example file containing a list of stations.
+
+test_commands.txt:
+     sample list of commands that you could give to the simulator
+
+the_metroSim:
+     reference implementation for students to see how the MetroSim should
+     function
+     
+PassengerQueue.cpp:
+    Implementation of PassengerQueue class which includes a key function
+    regarding PassengerQueue vectors, such as the enqueue function, dequeue
+    function, and print function. 
+    
+PassengerQueue.h:
+    Interface of PassengerQueue class, which includes key information regarding
+    the PassengerQueue class.
+    
+PassengerQueue_tests.cpp:
+    A unit testing file for the PassengerQueue Class. Runs in conjuction with
+    the unit_test framework to allow for testing of individual functions.
+    It runs functions that manipulate vectors to ensure that they are
+    functioning as intended.
+
+Passenger.cpp:
+    Implementation of Passenger class which includes a key function regarding 
+    Passenger structs, such as the print function. 
+    
+Passenger.h:
+    Interface of Passenger class, which includes key information regarding the
+    Passenger class.
+    
+output.txt: 
+    recorded output as a result of the test_commands.txt file 
+    
+Note:  the program should handle all cases.
+
+Data Structures:
+
+The main data structure of this program is a vector. A vector is essentially a
+dynamically expanding array that has a defined set of functions built into it.
+I used this structure because it allows me to access an element by index, which
+is helpful for accessing Passengers and PassengerQueues stored in each sequence
+container. Also, the size of the vector can be easily manipulated with already
+built in functions, which makes it easy to cycle Passengers in and out. The
+only disadvantage of using vectors in this program is that they consume more 
+memory. Vectors are easier to work with than arraylists or linked lists, which
+is why I chose to use them. I utilized parallel vectors for the list of 
+stations and the train so that it would be easy to move Passengers from one to
+the other.
+
+I also used structs in this program, so that I could create objects with more
+than one data member to be passed through my vectors. Using structs made it a
+lot easier to store information specific to a Passenger or a Station in one
+object instead of creating separate variables over and over again and having
+to manage passing all of them through the vectors. Grouping the data in a
+struct allowed the information to stay consistent and connected.
+
+Testing:
+
+I first tested the print function in the Passenger class by directing the
+output to cout to ensure that it was properly formatted. 
+
+Next, I tested each function in PassengerQueue by writing test functions in
+PassengerQueue_tests.cpp. My testing strategy for this class was to imagine
+every possible edge case and write cout statements to ensure that the functions
+were manipulating the vector as intended. I tested each function directly after
+writing it so I could pinpoint errors easily. I utilized the print function 
+after testing it to make sure the other functions functioned as intended.
+
+Next, I tested each function in MetroSim by writing statements in main.cpp.
+I directed any output to cout, so I could see that it was printing correctly.
+I considered all edge cases and tested them to make sure the program dealt 
+with them appropriately. In some cases, I had to write two functions before I
+tested either of them, but for most, I tested them directly after I wrote them.
+The one bug I encountered frequently was segfault because of the index of the 
+vector being different than the corresponding station number. 
+
+Lastly, I wrote main.cpp and tested it by entering my own commands to ensure
+that the commands were functioning properly. I tested using too few or too many
+strings in the command line to make sure the program displayed the correct 
+message. I also tested files that do not exist to make sure it caused the
+program to crash and exit. Once my commands appeared to be functioning as 
+intended, I used diff to compare the output of my program to the output of
+the demo program using the command file and the command file as cin. Diff 
+allowed me to make sure that the output was exact to the demo file. Some bugs I
+encountered while using diff was segfaults and spacing issues. Once I
+confirmed that the output was the same, I felt confident that my program was
+functioning as it should.
+
+The most helpful testing strategy I used was considering edge cases and 
+utilizing the print function and cout statements so that I could see exactly
+how the data structures were being manipulated. Also, diff was a very helpful
+strategy to ensure my output was properly formatted.
+
+Time Spent: 40 hours
+
+Note: This homework comes partially implemented, but student must also
+create the driver and add class functionality.
